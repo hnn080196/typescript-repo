@@ -14,7 +14,7 @@ const limiter = RateLimit({
 // apply rate limiter to all requests
 const server = jsonServer.create()
 
-const PORT = process.env['PORT'] || 3000
+const PORT = process.env['PORT'] || 1234
 const PKG_JSON_PATH = pkgUp.pkgUpSync()
 if (!PKG_JSON_PATH)
   throw new Error('Could not determine package.json path')
